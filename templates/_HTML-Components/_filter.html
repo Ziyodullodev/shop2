@@ -1,0 +1,637 @@
+<!DOCTYPE HTML>
+<html lang="en">
+{% load static %}
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Bootstrap-ecommerce by Vosidiy M.">
+
+<title>Website title - bootstrap html template</title>
+
+<!-- jQuery -->
+<script src="{% static '../js/jquery-2.0.0.min.js' %}" type="text/javascript"></script>
+
+<!-- Bootstrap4 files-->
+<script src="{% static '../js/bootstrap.bundle.min.js' %}" type="text/javascript"></script>
+<link href="{% static '../css/bootstrap.css' %}" rel="stylesheet" type="text/css"/>
+
+<!-- Font awesome 5 -->
+<link href="{% static '../fonts/fontawesome/css/all.min.css' %}" type="text/css" rel="stylesheet">
+
+<!-- custom style -->
+<link href="{% static '../css/ui.css' %}" rel="stylesheet" type="text/css"/>
+<link href="{% static '../css/responsive.css' %}" rel="stylesheet" />
+
+<!-- custom javascript -->
+<script src="{% static '../js/script.js' %}" type="text/javascript"></script>
+
+</head>
+<body>
+
+<header class="section-header">
+<section class="header-main border-bottom">
+<div class="container">
+	<a href="http://bootstrap-ecommerce.com" class="brand-wrap"><img class="logo" src="{% static '../images/logo.png' %}"></a>
+</div> <!-- container.// -->
+</section>
+</header> <!-- section-header.// -->
+
+
+<section class="section-content padding-y bg">
+<div class="container">
+
+
+<!-- ============================ COMPONENT FILTER TOP 1 ================================= -->
+<div class="card">
+<div class="card-body d-flex">
+	<div class="form-inline d-inline-flex mr-auto">
+		<label>Category</label>
+		<select class="ml-2 form-control">
+			<option>Clothes</option>
+			<option>Electronics</option>
+			<option>Home Items</option>
+			<option>Foods</option>
+		</select>
+	</div>
+	<div class="btn-group" role="group" aria-label="Filter by">
+	  <button type="button" class="btn btn-outline-primary active">Featured</button>
+	  <button type="button" class="btn btn-outline-primary">New Items</button>
+	  <button type="button" class="btn btn-outline-primary">On Sale</button>
+	</div>
+</div>
+</div> <!-- card.// -->
+<!-- ============================ COMPONENT FILTER TOP 1 END.// ================================= -->
+
+<br><br>
+
+
+<!-- ============================ COMPONENT FILTER TOP 2 ================================= -->
+<div class="card">
+<div class="card-body d-flex align-items-center">
+	<nav class="flex-fill"> 
+	<ol class="breadcrumb">
+	    <li class="breadcrumb-item"><a href="#">Home</a></li>
+	    <li class="breadcrumb-item"><a href="#">Category name</a></li>
+	    <li class="breadcrumb-item"><a href="#">Sub category</a></li>
+	    <li class="breadcrumb-item active" aria-current="page">Items</li>
+	</ol>  
+	</nav> <!-- col.// -->
+	<div>
+		<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	      Filter by
+	    </button>
+	    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+	      <a class="dropdown-item" href="#">Dropdown link</a>
+	      <a class="dropdown-item" href="#">Dropdown link</a>
+	    </div>
+
+	    <div class="btn-group">
+		 	<a href="#" class="btn btn-light" data-toggle="tooltip" title="List view"> <i class="fa fa-bars"></i></a>
+			<a href="#" class="btn  btn-light" data-toggle="tooltip" title="Grid view"> <i class="fa fa-th"></i></a>
+		</div>
+	</div>
+
+</div>
+</div> <!-- card.// -->
+<!-- ============================ COMPONENT FILTER TOP 2 END.// ================================= -->
+
+<br><br>
+
+<!-- ============================ COMPONENT FILTER TOP 3 ================================= -->
+<div class="card">
+	<div class="card-body">
+<div class="row">
+	<div class="col-md-2"> Your are here: </div> <!-- col.// -->
+	<nav class="col-md-8"> 
+	<ol class="breadcrumb">
+	    <li class="breadcrumb-item"><a href="#">Home</a></li>
+	    <li class="breadcrumb-item"><a href="#">Category name</a></li>
+	    <li class="breadcrumb-item"><a href="#">Sub category</a></li>
+	    <li class="breadcrumb-item active" aria-current="page">Items</li>
+	</ol>  
+	</nav> <!-- col.// -->
+</div> <!-- row.// -->
+<hr>
+<div class="row">
+	<div class="col-md-2">Filter by</div> <!-- col.// -->
+	<div class="col-md-10"> 
+		<ul class="list-inline">
+		  <li class="list-inline-item dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">   Supplier type </a>
+            <div class="dropdown-menu p-3" style="max-width:400px;">	
+		      <label class="form-check">
+		      	 <input type="radio" name="myfilter" class="form-check-input"> Good supplier
+		      </label>
+		      <label class="form-check">	
+		      	 <input type="radio" name="myfilter" class="form-check-input"> Best supplier
+		      </label>
+		      <label class="form-check">
+		      	 <input type="radio" name="myfilter" class="form-check-input"> New supplier
+		      </label>
+            </div> <!-- dropdown-menu.// -->
+	      </li>
+	      <li class="list-inline-item dropdown">
+	      	<a href="#" class="dropdown-toggle" data-toggle="dropdown">  Country </a>
+            <div class="dropdown-menu p-3">	
+		      <label class="form-check">
+		      	 <input type="checkbox" class="form-check-input"> China
+		      </label>
+		      <label class="form-check">
+		      	 <input type="checkbox" class="form-check-input"> Japan
+		      </label>
+		      <label class="form-check">
+		      	 <input type="checkbox" class="form-check-input"> Uzbekistan
+		      </label>
+		      <label class="form-check">
+		      	 <input type="checkbox" class="form-check-input"> Russia
+		      </label>
+            </div> <!-- dropdown-menu.// -->
+	      </li>
+		  <li class="list-inline-item"><a href="#">Product type</a></li>
+		  <li class="list-inline-item"><a href="#">Brand name</a></li>
+		  <li class="list-inline-item"><a href="#">Color</a></li>
+		  <li class="list-inline-item"><a href="#">Size</a></li>
+		  <li class="list-inline-item">
+		  	<div class="form-inline">
+		  		<label class="mr-2">Price</label>
+				<input class="form-control form-control-sm" placeholder="Min" type="number">
+					<span class="px-2"> - </span>
+				<input class="form-control form-control-sm" placeholder="Max" type="number">
+				<button type="submit" class="btn btn-sm btn-light ml-2">Ok</button>
+			</div>
+		  </li>
+		</ul>
+	</div> <!-- col.// -->
+</div> <!-- row.// -->
+	</div> <!-- card-body .// -->
+</div> <!-- card.// -->
+
+<!-- ============================ COMPONENT FILTER TOP 3 END.// ================================= -->
+
+<br><br>
+
+<div class="row">
+	<aside class="col-md-3">
+
+<!-- ============================ COMPONENT FILTER CAT ================================= -->
+<div class="card mb-3">
+	<div class="card-body">
+		<h5 class="card-title">Product type</h5>
+		<ul class="list-menu">
+			<li><a href="#">People <span class="badge badge-pill badge-light float-right">120</span> </a></li>
+			<li><a href="#">Watches <span class="badge badge-pill badge-light float-right">42</span> </a></li>
+			<li><a href="#">Cinema <span class="badge badge-pill badge-light float-right">16</span> </a></li>
+			<li><a href="#">Clothes <span class="badge badge-pill badge-light float-right">87</span> </a></li>
+			<li><a href="#">Home items <span class="badge badge-pill badge-light float-right">34</span></a></li>
+			<li><a href="#">Animals <span class="badge badge-pill badge-light float-right">7</span></a></li>
+			<li><a href="#">People <span class="badge badge-pill badge-light float-right">12</span></a></li>
+		</ul>
+	</div>
+</div> <!-- card.// -->
+<!-- ============================ COMPONENT FILTER CAT END .// ================================= -->
+
+
+<!-- ============================ COMPONENT FILTER START  ================================= -->
+<div class="card mb-3">
+	<div class="card-body">
+		<h5 class="card-title">Rating</h5>
+	
+		<label class="custom-control custom-checkbox">
+		  <input type="checkbox" checked="" class="custom-control-input">
+		  <div class="custom-control-label text-warning"> 
+		  	<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+		  	<i class="fa fa-star"></i> <i class="fa fa-star"></i>
+		  </div>
+		</label>
+
+		<label class="custom-control custom-checkbox">
+		  <input type="checkbox"  checked="" class="custom-control-input">
+		  <div class="custom-control-label text-warning"> 
+		  	<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+		  	<i class="fa fa-star"></i> 
+		  </div>
+		</label>
+
+		<label class="custom-control custom-checkbox">
+		  <input type="checkbox"   checked="" class="custom-control-input">
+		  <div class="custom-control-label text-warning"> 
+		  	<i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+		  </div>
+		</label>
+
+		<label class="custom-control custom-checkbox">
+		  <input type="checkbox"  checked="" class="custom-control-input">
+		  <div class="custom-control-label text-warning"> 
+		  	<i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+		  
+		  </div>
+		</label>
+
+	</div>
+</div> <!-- card.// -->
+<!-- ============================ COMPONENT FILTER START END.// ================================= -->
+
+
+	</aside> <!-- col.// -->
+
+	<aside class="col-md-3">
+
+<!-- ============================ COMPONENT FILTER BRAND  ================================= -->
+<div class="card mb-3">
+	<div class="card-body">
+		<h5 class="card-title">Brands</h5>
+	
+		<label class="custom-control custom-checkbox">
+		  <input type="checkbox" checked="" class="custom-control-input">
+		  <div class="custom-control-label">Mercedes  </div>
+		</label>
+
+		<label class="custom-control custom-checkbox">
+		  <input type="checkbox"  checked="" class="custom-control-input">
+		  <div class="custom-control-label">Toyota </div>
+		</label>
+
+		<label class="custom-control custom-checkbox">
+		  <input type="checkbox"   checked="" class="custom-control-input">
+		  <div class="custom-control-label">Mitsubishi</div>
+		</label>
+
+		<label class="custom-control custom-checkbox">
+		  <input type="checkbox"  checked="" class="custom-control-input">
+		  <div class="custom-control-label">Nissan</div>
+		</label>
+
+		<label class="custom-control custom-checkbox">
+		  <input type="checkbox"  class="custom-control-input">
+		  <div class="custom-control-label">Honda </div>
+		</label>
+
+	</div>
+</div> <!-- card.// -->
+<!-- ============================ COMPONENT FILTER BRAND END.// ================================= -->
+
+<!-- ============================ COMPONENT FILTER BRAND COUNT ================================= -->
+<div class="card mb-3">
+	<div class="card-body">
+		<h5 class="card-title">Brands count</h5>
+	
+		<label class="custom-control custom-checkbox">
+		  <input type="checkbox"  checked="" class="custom-control-input">
+		  <div class="custom-control-label">Mercedes  <b class="badge badge-pill badge-light float-right">120</b>  </div>
+		</label>
+
+		<label class="custom-control custom-checkbox">
+		  <input type="checkbox"  checked="" class="custom-control-input">
+		  <div class="custom-control-label">Toyota <b class="badge badge-pill badge-light float-right">15</b>  </div>
+		</label>
+
+		<label class="custom-control custom-checkbox">
+		  <input type="checkbox"  checked="" class="custom-control-input">
+		  <div class="custom-control-label">Mitsubishi <b class="badge badge-pill badge-light float-right">35</b> </div>
+		</label>
+
+		<label class="custom-control custom-checkbox">
+		  <input type="checkbox"  checked="" class="custom-control-input">
+		  <div class="custom-control-label">Nissan <b class="badge badge-pill badge-light float-right">89</b> </div>
+		</label>
+
+		<label class="custom-control custom-checkbox">
+		  <input type="checkbox" class="custom-control-input">
+		  <div class="custom-control-label">Honda <b class="badge badge-pill badge-light float-right">30</b>  </div>
+		</label>
+
+	</div>
+</div> <!-- card.// -->
+<!-- ============================ COMPONENT FILTER BRAND COUNT .//END ================================= -->
+
+
+
+	</aside> <!-- col.// -->
+
+	<aside class="col-md-3">
+
+
+
+<!-- ============================ COMPONENT FILTER COLOR ================================= -->
+<div class="card mb-3">
+	<div class="card-body">
+		<h5 class="card-title">Colors</h5>
+	
+		<div class="row">
+			<div class="col-md-6">
+				<label class="custom-control custom-checkbox">
+				  <input type="checkbox" checked="" class="custom-control-input">
+				  <div class="custom-control-label">Red </div>
+				</label>
+			</div> <!-- col.// -->
+			<div class="col-md-6">
+				<label class="custom-control custom-checkbox">
+				  <input type="checkbox" checked="" class="custom-control-input">
+				  <div class="custom-control-label">Green </div>
+				</label>
+			</div> <!-- col.// -->
+			<div class="col-md-6">
+				<label class="custom-control custom-checkbox">
+				  <input type="checkbox" checked="" class="custom-control-input">
+				  <div class="custom-control-label">Blue</div>
+				</label>
+			</div> <!-- col.// -->
+			<div class="col-md-6">
+				<label class="custom-control custom-checkbox">
+				  <input type="checkbox" checked="" class="custom-control-input">
+				  <div class="custom-control-label">Orange</div>
+				</label>
+			</div> <!-- col.// -->
+			<div class="col-md-6">
+				<label class="custom-control custom-checkbox">
+				  <input type="checkbox" checked="" class="custom-control-input">
+				  <div class="custom-control-label">Black </div>
+				</label>
+			</div> <!-- col.// -->
+			<div class="col-md-6">
+				<label class="custom-control custom-checkbox">
+				  <input type="checkbox" class="custom-control-input">
+				  <div class="custom-control-label">White </div>
+				</label>
+			</div> <!-- col.// -->
+			<div class="col-md-6">
+				<label class="custom-control custom-checkbox">
+				  <input type="checkbox" checked="" class="custom-control-input">
+				  <div class="custom-control-label">Gray </div>
+				</label>
+			</div> <!-- col.// -->
+		</div> <!-- row.// -->
+		<a href="#" class="btn btn-light btn-sm mt-2">Reset</a>
+	</div>
+</div> <!-- card.// -->
+<!-- ============================ COMPONENT FILTER COLOR  END .// ================================= -->
+
+
+
+<!-- ============================ COMPONENT FILTER RANGE ================================= -->
+<div class="card mb-3">
+	<div class="card-body">
+
+		<h5 class="card-title">Price range</h5>
+		
+		<input type="range" class="custom-range" min="0" max="100" name="">
+		<div class="form-row">
+		<div class="form-group col-md-6">
+		  <label>Min</label>
+		  <input class="form-control" placeholder="$0" type="number">
+		</div>
+		<div class="form-group text-right col-md-6">
+		  <label>Max</label>
+		  <input class="form-control" placeholder="$1,0000" type="number">
+		</div>
+		</div> <!-- form-row.// -->
+		<button class="btn btn-block btn-primary">Apply</button>
+	
+	</div>
+</div> <!-- card.// -->
+<!-- ============================ COMPONENT FILTER RANGE END .// ================================= -->
+
+	</aside> <!-- col.// -->
+	<aside class="col-md-3">
+
+
+<!-- ============================ COMPONENT FILTER RADIO  ================================= -->
+<div class="card mb-3">
+	<div class="card-body">
+		<h5 class="card-title">Buying</h5>
+	
+		<label class="custom-control custom-radio">
+		  <input type="radio" name="myfilter_radio" checked="" class="custom-control-input">
+		  <div class="custom-control-label">All listing </div>
+		</label>
+
+		<label class="custom-control custom-radio">
+		  <input type="radio" name="myfilter_radio" class="custom-control-input">
+		  <div class="custom-control-label">Auctions </div>
+		</label>
+
+		<label class="custom-control custom-radio">
+		  <input type="radio" name="myfilter_radio" class="custom-control-input">
+		  <div class="custom-control-label">Buy now</div>
+		</label>
+
+		<label class="custom-control custom-radio">
+		  <input type="radio" name="myfilter_radio" class="custom-control-input">
+		  <div class="custom-control-label">Best offer </div>
+		</label>
+
+	</div>
+</div> <!-- card.// -->
+<!-- ============================ COMPONENT FILTER RADIO END.// ================================= -->
+
+
+<!-- ============================ COMPONENT ASIDE 5 ================================= -->
+<div class="card mb-3">
+	<div class="card-body">
+		<h5 class="card-title">Sizes</h5>
+
+		
+		  <label class="checkbox-btn">
+		    <input type="checkbox">
+		    <span class="btn btn-light"> XS </span>
+		  </label>
+
+		  <label class="checkbox-btn">
+		    <input type="checkbox">
+		    <span class="btn btn-light"> SM </span>
+		  </label>
+
+		  <label class="checkbox-btn">
+		    <input type="checkbox">
+		    <span class="btn btn-light"> LG </span>
+		  </label>
+
+		  <label class="checkbox-btn">
+		    <input type="checkbox">
+		    <span class="btn btn-light"> XXL </span>
+		  </label>
+
+	</div>
+</div> <!-- card.// -->
+<!-- ============================ COMPONENT ASIDE 5 END .// ================================= -->
+
+
+<!-- ============================ COMPONENT FILTER SEARCH ================================= -->
+<div class="card mb-3">
+	<div class="card-body">
+		<h5 class="card-title">Search</h5>
+
+		<div class="input-group">
+			<input type="text" placeholder="Keyword" class="form-control" name="">
+			<span class="input-group-append"> <button class="btn btn-primary"> <i class="fa fa-search"></i></button></span>
+		</div>
+	</div>
+</div> <!-- card.// -->
+<!-- ============================ COMPONENT FILTER SEARCH END .// ================================= -->
+
+
+	</aside> <!-- col.// -->
+</div> <!-- row.// -->
+
+<hr>
+<h6 class="text-muted">Sidebar collapses</h6>
+<br>
+<div class="row">
+	<aside class="col-md-4">
+<!-- ============================ COMPONENT 1 ================================= -->
+<div class="list-group">
+	<article class="list-group-item">
+		<header class="filter-header">
+			<a href="#" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" class="">
+				<i class="icon-control fa fa-chevron-down"></i>
+				<h6 class="title">Some heading </h6>
+			</a>
+		</header>
+		<div class="filter-content collapse show" id="collapse1" style="">			
+			<form class="py-3">
+			<div class="input-group">
+			  <input type="text" class="form-control" placeholder="Search">
+			  <div class="input-group-append">
+			    <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+			  </div>
+			</div>
+			</form>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor.	</p>
+		</div> <!-- collapse -filter-content  .// -->
+	</article>
+	<article class="list-group-item">
+		<header class="filter-header">
+			<a href="#" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" class="collapsed">
+				<i class="icon-control fa fa-chevron-down"></i>
+				<h6 class="title">Second heading </h6>
+			</a>
+		</header>
+		<div class="filter-content collapse" id="collapse2" style="">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt deserunt mollit anim id est laborum.	</p>
+		</div>
+	</article>
+	<article class="list-group-item">
+		<header class="filter-header">
+			<a href="#" data-toggle="collapse" data-target="#collapse3" class="collapsed" aria-expanded="false">
+				<i class="icon-control fa fa-chevron-down"></i>
+				<h6 class="title">Another title </h6>
+			</a>
+		</header>
+		<div class="filter-content collapse" id="collapse3" style="">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt deserunt mollit anim id est laborum.	</p>
+		</div>
+	</article>
+</div> <!-- list-group.// -->
+<!-- ============================ COMPONENT 1 END .// ================================= -->
+	</aside> <!-- col.// -->
+	<aside class="col-md-4">
+
+<!-- ============================ COMPONENT 2 ================================= -->
+<div class="card">
+	<article class="filter-group">
+		<header class="card-header">
+			<a href="#" data-toggle="collapse" data-target="#collapse33">
+				<i class="icon-control fa fa-chevron-down"></i>
+				<h6 class="title">Some heading </h6>
+			</a>
+		</header>
+		<div class="filter-content collapse show" id="collapse33">
+			<div class="card-body">
+				<form class="pb-3">
+				<div class="input-group">
+				  <input type="text" class="form-control" placeholder="Search">
+				  <div class="input-group-append">
+				    <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+				  </div>
+				</div>
+				</form>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt deserunt mollit anim laborum.	</p>
+			</div> <!-- card-body.// -->
+		</div>
+	</article> <!-- filter-group  .// -->
+	<article class="filter-group">
+		<header class="card-header">
+			<a href="#" data-toggle="collapse" data-target="#collapse44">
+				<i class="icon-control fa fa-chevron-down"></i>
+				<h6 class="title">Another heading </h6>
+			</a>
+		</header>
+		<div class="filter-content collapse show" id="collapse44">
+			<div class="card-body">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt deserunt mollit anim id est laborum.	</p>
+			</div> <!-- card-body.// -->
+		</div>
+	</article> <!-- filter-group  .// -->
+</div> <!-- card.// -->
+
+<!-- ============================ COMPONENT 2 END .// ================================= -->
+	</aside> <!-- col.// -->
+	<aside class="col-md-4">
+		
+<!-- ============================ COMPONENT 3  ================================= -->
+<div class="card mb-3">
+	<header class="card-header">
+		<a href="#" data-toggle="collapse" data-target="#collapse11">
+			<i class="icon-control fa fa-chevron-down"></i>
+			<h6 class="title">Heading of card </h6>
+		</a>
+	</header>
+	<div class="collapse show" id="collapse11">
+		<article class="card-body">
+			<form class="mb-3">
+			<div class="input-group">
+			  <input type="text" class="form-control" placeholder="Search">
+			  <div class="input-group-append">
+			    <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+			  </div>
+			</div>
+			</form>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt deserunt mollit anim id est laborum.	
+		</article> <!-- card-body.// -->
+	</div> <!-- collapse .// -->
+</div> <!-- card.// -->
+<div class="card">
+	<header class="card-header">
+		<a href="#" data-toggle="collapse" data-target="#collapse22" aria-expanded="true" class="">
+			<i class="icon-control fa fa-chevron-down"></i>
+			<h6 class="title">Heading of card </h6>
+		</a>
+	</header>
+	<div class="collapse show" id="collapse22" style="">
+		<article class="card-body">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt deserunt mollit anim id est laborum.	
+		</article> <!-- card-body.// -->
+	</div> <!-- collapse .// -->
+</div> <!-- card.// -->
+
+<!-- ============================ COMPONENT 3 END .// ================================= -->
+
+	</aside> <!-- col.// -->
+</div> <!-- row.// -->
+
+
+</div> <!-- container .//  -->
+</section>
+<!-- ========================= SECTION CONTENT END// ========================= -->
+
+<!-- ========================= FOOTER ========================= -->
+<footer class="section-footer border-top padding-y">
+	<div class="container">
+		
+<a href="http://bootstrap-ecommerce.com">Bootstrap-ecommerce UI kit</a>
+
+	</div><!-- //container -->
+</footer>
+<!-- ========================= FOOTER END // ========================= -->
+
+
+</body>
+</html>

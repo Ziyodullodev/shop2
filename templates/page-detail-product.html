@@ -1,0 +1,360 @@
+<!DOCTYPE HTML>
+<html lang="en">
+{% load static %}
+<head>
+<meta charset="utf-8">
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="cache-control" content="max-age=604800" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Hamroh</title>
+
+<link href="{% static 'images/favicon.ico' %}" rel="shortcut icon" type="image/x-icon">
+
+<!-- jQuery -->
+<script src="{% static 'js/jquery-2.0.0.min.js' %}" type="text/javascript"></script>
+
+<!-- Bootstrap4 files-->
+<script src="{% static 'js/bootstrap.bundle.min.js' %}" type="text/javascript"></script>
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css"/>
+
+<!-- Font awesome 5 -->
+<link href="{% static 'fonts/fontawesome/css/all.min.css' %}" type="text/css" rel="stylesheet">
+
+<!-- custom style -->
+<link href="{% static 'css/ui.css' %}" rel="stylesheet" type="text/css"/>
+<link href="{% static 'css/responsive.css' %}" rel="stylesheet" type="text/css" />
+
+<!-- custom javascript -->
+<script src="{% static 'js/script.js' %}" type="text/javascript"></script>
+
+</head>
+<body>
+
+<!-- REMOVE FOLLOWING LINK -->
+<a href="http://bootstrap-ecommerce.com/page-themes.html" class="btn btn-dark rounded-pill" style="font-size:13px; z-index:100; position: fixed; bottom:10px; right:10px;">Download theme</a>
+<!-- REMOVE  //END -->
+
+<header class="section-header">
+<section class="header-main border-bottom">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-xl-2 col-lg-3 col-md-12">
+				<a href="#" class="brand-wrap" style="font-size: 30px; color: #ff6a00; font-weight: 600">
+					Hamroh
+				</a> <!-- brand-wrap.// -->
+			</div>
+      <div class="col-xl-6 col-lg-5 col-md-6">
+        <form action="" method="get" class="search-header">
+          <div class="input-group w-100">
+            <select class="custom-select border-right"  name="category_name">
+                <option value="">All type</option><option value="codex">Special</option>
+                <option value="comments">Only best</option>
+                <option value="content">Latest</option>
+            </select>
+              <input type="text" class="form-control" placeholder="Search" name="q">
+              
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="submit">
+                  <i class="fa fa-search"></i> Search
+                </button>
+              </div>
+            </div>
+        </form> <!-- search-wrap .end// -->
+      </div> <!-- col.// -->
+      <div class="col-xl-4 col-lg-4 col-md-6">
+				<div class="widgets-wrap float-md-right">
+					<div class="widget-header mr-3">
+						<a href="/page-profile-main/" class="widget-view">
+							<div class="icon-area">
+								<i class="fa fa-user"></i>
+								<span class="notify">3</span>
+							</div>
+							<small class="text"> My profile </small>
+						</a>
+					</div>
+					<div class="widget-header mr-3">
+						<a href="#" class="widget-view">
+							<div class="icon-area">
+								<i class="fa fa-comment-dots"></i>
+								<span class="notify">1</span>
+							</div>
+							<small class="text"> Message </small>
+						</a>
+					</div>
+					<div class="widget-header mr-3">
+						<a href="/page-profile-orders/" class="widget-view">
+							<div class="icon-area">
+								<i class="fa fa-store"></i>
+							</div>
+							<small class="text"> Orders </small>
+						</a>
+					</div>
+					<div class="widget-header">
+						<a href="/page-shopping-cart/" class="widget-view">
+							<div class="icon-area">
+								<i class="fa fa-shopping-cart"></i>
+							</div>
+							<small class="text"> Cart </small>
+						</a>
+					</div>
+				</div> <!-- widgets-wrap.// -->
+			</div> <!-- col.// -->
+    </div> <!-- row.// -->
+  </div> <!-- container.// -->
+</section> <!-- header-main .// -->
+
+<nav class="navbar navbar-main navbar-expand-lg border-bottom">
+  <div class="container">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-controls="main_nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div> <!-- container .// -->
+</nav>
+</header> <!-- section-header.// -->
+
+<section class="py-3 bg-light">
+  <div class="container">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Category name</a></li>
+        <li class="breadcrumb-item"><a href="#">Sub category</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Items</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ========================= SECTION CONTENT ========================= -->
+<section class="section-content bg-white padding-y">
+<div class="container">
+
+<!-- ============================ ITEM DETAIL ======================== -->
+	<div class="row">
+		<aside class="col-md-6">
+<div class="card">
+<article class="gallery-wrap"> 
+	<div class="img-big-wrap">
+	  <div> <a href="#"><img src="{{i.rasm.url}}"></a></div>
+	</div> <!-- slider-product.// -->
+ <!-- slider-nav.// -->
+</article> <!-- gallery-wrap .end// -->
+</div> <!-- card.// -->
+		</aside>
+		<main class="col-md-6">
+<article class="product-info-aside">
+
+<h2 class="title mt-3">{{i.nom}}</h2>
+
+<div class="rating-wrap my-3">
+	<ul class="rating-stars">
+		<li style="width:80%" class="stars-active"> 
+			<i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+			<i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+			<i class="fa fa-star"></i> 
+		</li>
+		<li>
+			<i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+			<i class="fa fa-star"></i> <i class="fa fa-star"></i> 
+			<i class="fa fa-star"></i> 
+		</li>
+	</ul>
+	<small class="label-rating text-muted">132 reviews</small>
+	<small class="label-rating text-success"> <i class="fa fa-clipboard-check"></i> 154 orders </small>
+</div> <!-- rating-wrap.// -->
+
+<div class="mb-3"> 
+	<var class="price h4">$ {{i.narx}}</var>
+	<span class="text-muted">$ {{i.narx}}</span>
+</div> <!-- price-detail-wrap .// -->
+
+<p>{{i.batafsil}} </p>
+
+
+<dl class="row">
+  <dt class="col-sm-3">Manufacturer</dt>
+  <dd class="col-sm-9"><a href="#">{{i.brend}}</a></dd>
+
+  <dt class="col-sm-3">Article number</dt>
+  <dd class="col-sm-9">1050{{i.id}}</dd>
+
+  <dt class="col-sm-3">Guarantee</dt>
+  <dd class="col-sm-9">{{i.kafolaat}}</dd>
+
+  <dt class="col-sm-3">Delivery time</dt>
+  <dd class="col-sm-9">{{i.yetkazish}}s</dd>
+
+  <dt class="col-sm-3">Availabilty</dt>
+    {% if i.mavjud == True %}
+    <dd class="col-sm-9">True</dd>
+    {% else %}
+    <dd class="col-sm-9">False</dd>
+    {% endif %}
+
+</dl>
+    <form action="/add-shopping-cart/{{i.id}}/" method="get"> {% csrf_token %}
+	<div class="form-row  mt-4">
+		<div class="form-group col-md flex-grow-0">
+			<div class="input-group mb-3 input-spinner">
+
+			  <input type="text" class="form-control" value="1" name="soni">
+
+			</div>
+		</div> <!-- col.// -->
+		<div class="form-group col-md">
+			<!-- <button class="btn btn-primary" type="submit">
+				 <span class="text">Sotib olish</span> 
+            </button> -->
+			<a href="{% url 'payment' i.id %}" class="btn btn-primary">
+        <i class="fas fa-shopping-cart"></i> <span class="text">Sotib olish</span> 
+			</a>
+		</div> <!-- col.// -->
+	</div> <!-- row.// -->
+</form>
+</article> <!-- product-info-aside .// -->
+		</main> <!-- col.// -->
+	</div> <!-- row.// -->
+
+<!-- ================ ITEM DETAIL END .// ================= -->
+
+
+</div> <!-- container .//  -->
+</section>
+<!-- ========================= SECTION CONTENT END// ========================= -->
+
+<div class="row">{% for i in mahsulot %}
+  <div class="col-md-3">
+    <figure class="card card-product-grid">
+      <div class="img-wrap">
+        <span class="badge badge-danger"> NEW </span>
+         <a href="/page-detail-product/{{i.id}}/"><img style="  width: auto ; height: 160px; margin-left: center; margin-top: 15px;" src="{{ i.rasm.url}}"></a>
+      </div> <!-- img-wrap.// -->
+      <figcaption class="info-wrap">
+          <a href="/page-detail-product/{{i.id}}/" class="title mb-2">{{i.batafsil}}</a>
+          <div class="price-wrap">
+            <span class="price">$ {{i.narx}}</span>
+            <small class="text-muted">/per item</small>
+          </div> <!-- price-wrap.// -->
+
+          <p class="mb-2"> 2 Pieces  <small class="text-muted">(Min Order)</small></p>
+
+          <p class="text-muted ">Guangzhou Yichuang Electronic Co</p>
+
+          <hr>
+
+          <p class="mb-3">
+            <span class="tag"> <i class="fa fa-check"></i> Verified</span>
+            <span class="tag"> {{i.kafolat}} Years </span>
+            <span class="tag"> 23 reviews </span>
+                   <span class="tag"> {{i.mamlakat}}</span>
+          </p>
+
+          <label class="custom-control mb-3 custom-checkbox">
+            <input type="checkbox" class="custom-control-input">
+            <div class="custom-control-label">Add to compare
+            </div>
+          </label>
+
+          <a href="#" class="btn btn-outline-primary"> <i class="fa fa-envelope"></i> Contact supplier </a>
+
+      </figcaption>
+    </figure>
+  </div>{% endfor %}
+</div> <!-- col.// -->
+
+
+
+<!-- ========================= SECTION SUBSCRIBE  ========================= -->
+<section class="padding-y-lg bg-light border-top">
+<div class="container">
+
+<p class="pb-2 text-center">Delivering the latest product trends and industry news straight to your inbox</p>
+
+<div class="row justify-content-md-center">
+  <div class="col-lg-4 col-sm-6">
+<form class="form-row">
+    <div class="col-8">
+    <input class="form-control" placeholder="Your Email" type="email">
+    </div> <!-- col.// -->
+    <div class="col-4">
+    <button type="submit" class="btn btn-block btn-warning"> <i class="fa fa-envelope"></i> Subscribe </button>
+    </div> <!-- col.// -->
+</form>
+<small class="form-text">We’ll never share your email address with a third-party. </small>
+  </div> <!-- col-md-6.// -->
+</div>
+  
+
+</div>
+</section>
+<!-- ========================= SECTION SUBSCRIBE END// ========================= -->
+
+
+<!-- ========================= FOOTER ========================= -->
+<footer class="section-footer bg-secondary">
+  <div class="container">
+    <section class="footer-top padding-y-lg text-white">
+      <div class="row">
+        <aside class="col-md col-6">
+          <h6 class="title">Brands</h6>
+          <ul class="list-unstyled">
+            <li> <a href="#">Adidas</a></li>
+            <li> <a href="#">Puma</a></li>
+            <li> <a href="#">Reebok</a></li>
+            <li> <a href="#">Nike</a></li>
+          </ul>
+        </aside>
+        <aside class="col-md col-6">
+          <h6 class="title">Company</h6>
+          <ul class="list-unstyled">
+            <li> <a href="#">About us</a></li>
+            <li> <a href="#">Career</a></li>
+            <li> <a href="#">Find a store</a></li>
+            <li> <a href="#">Rules and terms</a></li>
+            <li> <a href="#">Sitemap</a></li>
+          </ul>
+        </aside>
+        <aside class="col-md col-6">
+          <h6 class="title">Help</h6>
+          <ul class="list-unstyled">
+            <li> <a href="#">Contact us</a></li>
+            <li> <a href="#">Money refund</a></li>
+            <li> <a href="#">Order status</a></li>
+            <li> <a href="#">Shipping info</a></li>
+            <li> <a href="#">Open dispute</a></li>
+          </ul>
+        </aside>
+        <aside class="col-md col-6">
+          <h6 class="title">Account</h6>
+          <ul class="list-unstyled">
+              <li> <a href="/page-user-login/"> User Login </a></li>
+              <li> <a href="/page-user-register/"> User register </a></li>
+              <li> <a href="/page-profile-setting/"> Account Setting </a></li>
+              <li> <a href="/page-profile-orders/"> My Orders </a></li>
+          </ul>
+        </aside>
+        <aside class="col-md">
+          <h6 class="title">Social</h6>
+          <ul class="list-unstyled">
+            <li><a href="#"> <i class="fab fa-facebook"></i> Facebook </a></li>
+            <li><a href="#"> <i class="fab fa-twitter"></i> Twitter </a></li>
+            <li><a href="#"> <i class="fab fa-instagram"></i> Instagram </a></li>
+            <li><a href="#"> <i class="fab fa-youtube"></i> Youtube </a></li>
+          </ul>
+        </aside>
+      </div> <!-- row.// -->
+    </section>  <!-- footer-top.// -->
+
+    <section class="footer-bottom text-center">
+    
+        <p class="text-white">Privacy Policy - Terms of Use - User Information Legal Enquiry Guide</p>
+        <p class="text-muted"> &copy 2019 Company name, All rights reserved </p>
+        <br>
+    </section>
+  </div><!-- //container -->
+</footer>
+<!-- ========================= FOOTER END // ========================= -->
+
+
+</body>
+</html>

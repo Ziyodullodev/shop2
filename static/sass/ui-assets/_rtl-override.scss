@@ -1,0 +1,45 @@
+html[dir='rtl']{
+    .card-banner{
+        .img-bg{
+            right:auto; left:0
+        }
+    }
+
+    .heading-line .title-section {
+        padding-left: 15px;
+    }
+
+    .home-category-banner .img-bg {
+        right: auto;
+        left:-50px;
+    }
+    
+    .icon-flag-sm {
+        margin-right: auto;
+        margin-left:10px;
+    }
+
+    .list-check{
+        padding-right: 0;
+        > li {
+            padding-right: 24px;
+            &:before{
+                right:0; left:auto;
+            }
+        }
+    }
+
+
+    .icontext{
+        .icon{
+            margin-right: auto;
+            margin-left: 10px;
+        }
+    }
+
+    .itemside{
+        .info{ padding-right: 15px; padding-left: initial;}
+    }
+
+}
+// html-dir end
